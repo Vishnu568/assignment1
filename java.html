@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //question1
+    var str1='Today is';
+    var str2='      a beautiful day     ';
+    var str3='    In Hawaii.    ';
+    c= str1.trim()+" " +str2.trim() +" "+str3.trim();
+    console.log(c);
+    //question2
+    var enteredAlphabet = "@";
+if (
+    (enteredAlphabet >= "a" && enteredAlphabet <= "z") ||
+    (enteredAlphabet >= "A" && enteredAlphabet <= "Z")
+)
+ 
+    switch (enteredAlphabet){
+        case "a":
+            console.log("Vowel");
+            break;
+        case "e":
+            console.log("Vowel");
+            break;
+        case "i":
+            console.log("Vowel");
+            break;
+        case "o":
+            console.log("Vowel");
+            break;
+        case "u":
+            console.log("Vowel");
+            break;
+        case "A":
+            console.log("Vowel");
+            break;
+        case "E":
+            console.log("Vowel");
+            break;
+        case "I":
+            console.log("Vowel");
+            break;
+        case "O":
+            console.log("Vowel");
+            break;
+        case "U":
+            console.log("Vowel");
+            break;
+        case "!":
+            console.log("Character is a non-alphabet");
+            break;
+
+        case "@":
+            console.log("Character is a non-alphabet");
+            break;
+
+        case "#":
+            console.log("Character is a non-alphabet");
+            break;
+
+        default:
+            console.log("Consonant");
+        }
+        else{
+            console.log("non-Alphabet");
+        }
+        //question3
+        var operator = "*";
+      var input1 = 2;
+      var input2 = 5;
+      
+      switch(operator){
+
+            case '+':
+            console.log(input1+input2);
+            break;
+
+            case '-':
+            console.log(input1-input2);
+            break;
+
+            case '*':
+            console.log(input1*input2);
+            break;
+
+            case '/':
+            console.log(input1/input2);
+            break;
+            
+            default:
+                console.log("invalid input");
+      }
+      //question 4
+      var A = Number(prompt("provide the needs 'A'"));
+      var B = Number(prompt("provide the needs 'B'"));
+      var C = Number(prompt("provide the needs 'C'"));
+
+      if (A == B && A == C) {
+        console.log("Equilateral Triangle");
+      } else if (A == B || A == C || B == C) {
+        console.log("Isosceles Triangle");
+      } else {
+        console.log("Scalene Triangle");
+      }
+      //question 5
+      var bill = 100;
+      var Total_bill = 0;
+      var units=300;
+
+      if (units > 0 && units <= 50)
+      {
+        bill = bill + units * 0.5;
+        Total_bill = Total_bill + bill;
+      } 
+      else if (units > 50 && units <= 150)
+      {
+        bill = bill + 50 * 0.5 + (units - 50) * 0.75;
+        Total_bill = Total_bill + bill;
+      } 
+      else if (units > 150 && units <= 250) 
+      {
+        bill = bill + 50 * 0.5 + 100 * 0.75 + (units - 150) * 1.2;
+        Total_bill = Total_bill + bill;
+      } 
+      else if (units > 250)
+       {
+        bill = bill + 50 * 0.5 + 100 * 0.75 + 100 * 1.2 + (units - 250) * 1.5;
+        Total_bill = Total_bill + bill + bill * 0.2;
+      }
+
+      console.log("Total Bill = ", Total_bill);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
